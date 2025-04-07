@@ -1,0 +1,20 @@
+model: PS_AC1D_FIF
+
+
+data_path: datasets/EMODB
+class_labels: ["angry", "boredom", "disgust", "fear", "happy", "neutral", "sad"] #EMODB
+#class_labels: ["angry", "calm", "disgust", "fear", "happy", "neutral", "sad", "surprise"] #RAVDESS
+
+
+feature_folder: features/EMODB_427
+feature_method: l  # l for librosa
+
+
+# checkpoints
+checkpoint_path: checkpoints/
+checkpoint_name: PS_AC1D_FIF
+
+
+epochs: 100
+batch_size: 10
+lr: 0.00001
