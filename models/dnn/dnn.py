@@ -104,8 +104,8 @@ class DNN(BaseModel, ABC):
         conf_matrix = confusion_matrix(y_val_classes, y_pred_classes)
 
         # Defining the class names
-        class_names: ["angry", "boredom", "disgust", "fear", "happy", "neutral", "sad"]  #EMODB
-        # class_names: ["angry", "calm", "disgust", "fear", "happy", "neutral", "sad", "surprise"] #RAVDESS
+        class_names = ["angry", "boredom", "disgust", "fear", "happy", "neutral", "sad"]  #EMODB
+        # class_names = ["angry", "calm", "disgust", "fear", "happy", "neutral", "sad", "surprise"] #RAVDESS
 
         # Normalizing the confusion matrix
         conf_matrix_normalized = conf_matrix.astype('float') / conf_matrix.sum(axis=1)[:, np.newaxis]
