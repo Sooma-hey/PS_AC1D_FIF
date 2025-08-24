@@ -1,6 +1,7 @@
 # PS_AC1D_FIF: Efficient SER Model  
 *A Deep Neural Network achieving real-time Speech Emotion Recognition (SER) with low computational cost.*
-
+[The paper's DOI](https://doi.org/10.1007/s11042-025-21009-4)
+[The paper's PDF version](https://rdcu.be/evp2h)
 
 ---
 
